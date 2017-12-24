@@ -1,0 +1,16 @@
+.company {
+    background-color: black;
+    color: white;
+  }
+.company .container {
+    display: flex;
+    align-items: center;
+    padding: 12px 0 12px 0.5em;
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  div {
+    display: block;
+}
