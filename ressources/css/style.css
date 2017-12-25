@@ -1,16 +1,65 @@
-.company {
+html {
+    display: block;
+    font-size: 18px;
+    background-color: white;
+}
+body {
+  display: block;
+  font-family: helvetica;
+  margin: 0;
+}
+body .company {
+    display: block;
     background-color: black;
     color: white;
   }
 .company .container {
     display: flex;
     align-items: center;
-    padding: 12px 0 12px 0.5em;
-  }
-  .container {
     max-width: 960px;
-    margin: 0 auto;
+    margin: 0;
   }
-  div {
-    display: block;
+.container img {
+   height: 1.5rem;
+   padding-left: 0.5rem;
+   padding-right: 1rem;
+  }
+.container span {
+  font-family: helvetica;
+  font-size: 1rem;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+  }
+body .main-banner {
+  display: block;
+  background: url("../img/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
 }
+.main-banner .container {
+  display: block;
+  max-width: 960px;
+  margin: 0 auto;
+  }
+.container .headline {
+  display: block;
+  background-color: black;
+  color: white;
+  width: 20rem;
+  padding: 2rem 3rem;
+  position: relative;
+  top: 9rem;
+  }
+.headline h1 h4 {
+  font-weight: bold;
+  }
+.headline h1 {
+  display: block;
+  font-size: 2em;
+  margin: 0.25em 0;
+  }
+.headline h4 {
+  display: block;
+  }
