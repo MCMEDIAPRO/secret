@@ -81,5 +81,54 @@ ul {
 }
 ul li {
  display: list-item;
+}
+
+div {
+    display: block;
+}
+body .container {
+   max-width: 960px;
+   margin: 0 auto;
+}
+.container .products {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0 0;
+}
+.products .product-pen {
+  display: block;
+  border: 4px solid black;
+  width: 30%;
+}
+.products .product-image {
+ display: flex;
+  padding: 2rem 0;
+  height: 9rem;
+  justify-content: center;
+  align-items: center;
+}
+.product-image img {
+ display: block;
+  border-style: none;
+  max-width: 8rem;
+}
+.product-image span {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+.container .business-info {
+  display: flex;
+justify-content: space-between;
+margin: 3em 0 0 0;
+}
+footer .container {
+  text-align: left;
+  height: 5rem;
+  display: flex;
+  background-color: firebrick;
+  color: white;
 
 }
