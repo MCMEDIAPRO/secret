@@ -119,13 +119,26 @@ body .container {
 .container .business-info {
   display: flex;
   justify-content: space-between;
-  margin: 3em 0 0 0;
+  margin: 3rem 0 0 0;
+}
+.business-info .info {
+  width: 35%;
+}
+.info .title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+footer {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 5em 0;
+  margin-top: 4em;
 }
 footer .container {
-  text-align: left;
-  height: 5rem;
-  display: flex;
-  background-color: firebrick;
-  color: white;
-
+  max-width: 960px;
+  margin: 0 auto;
 }
