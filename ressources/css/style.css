@@ -63,26 +63,23 @@ body .main-banner {
 .headline h4 {
   display: block;
   }
-body nav {
-  display: block;
+body .menu {
+  display: flex;
   background-color: firebrick;
   color: white;
 }
-nav container {
-
- max-width: 960px;
- margin: 0 auto;
+.menu .liste {
+  width: 960px;
+  margin: 0 auto;
 }
-nav ul {
- display:  inline-flex;
-  list-style: none;
-   justify-content: space-between;
-   align-items: center;
-  padding: 0.75rem 0;
+ul {
+ display: flex;
+ list-style: none;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0.75rem 0;
 }
-container li {
+ul li {
+ display: list-item;
 
-
-
-      display: list-item;
 }
