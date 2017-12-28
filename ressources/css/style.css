@@ -30,6 +30,7 @@ body .company {
   padding-top: 0.66rem;
   padding-bottom: 0.66rem;
   }
+  /* Main Banner */
 body .main-banner {
   display: block;
   background: url("../img/moto.jpeg");
@@ -57,12 +58,15 @@ body .main-banner {
   }
 .headline h1 {
   display: block;
-  font-size: 2em;
+  font-size: 2rem;
   margin: 0.25em 0;
   }
 .headline h4 {
   display: block;
+  font-size: 1rem;
+  margin: 0.25em 0;
   }
+    /* Menu Section */
 body .menu {
   display: flex;
   background-color: firebrick;
@@ -82,6 +86,7 @@ ul {
 ul li {
  display: list-item;
 }
+  /* Products Business Info Section */
 body .container {
   display: block;
   max-width: 960px;
@@ -107,7 +112,6 @@ body .container {
 .product-image img {
   width: 8rem;
 }
-
  .product span {
   display: block;
   background-color: black;
@@ -115,7 +119,6 @@ body .container {
   text-align: center;
   padding: 0.5rem;
 }
-
 .container .business-info {
   display: flex;
   justify-content: space-between;
@@ -130,7 +133,7 @@ body .container {
   color: white;
   padding: 1rem 2rem;
 }
-
+  /* Footer Section */
 footer {
   display: block;
   background-color: black;
@@ -141,4 +144,71 @@ footer {
 footer .container {
   max-width: 960px;
   margin: 0 auto;
+}
+.mobile-nav {
+  display: none;
+}
+/* Tablet responsive design */
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+  nav ul {
+    display: none;
+  }
+  .product.glasses {
+    display: none;
+  }
+  .product {
+    width: 47%;
+  }
+}
+/* Mobile Responsive Design */
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    display: flex;
+    height:15rem;
+    max-width:100%;
+    justify-content:center;
+    margin:0;
+    align-items:flex-end;
+  }
+  .headline {
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 10rem;
+
+ }
+  .headline h4 {
+    font-size: 0.77rem;
+    width: 100%;
+  }
+  .headline h1 {
+    font-size: 1rem;
+  }
+  .products {
+      flex-wrap: wrap;
+    }
+  .product {
+      width: 90%;
+      margin: auto;
+    }
+  .product.watch, .product.glasses {
+    display: none;
+  }
+  .business-info {
+    display:flex;
+    flex-direction:column;
+  }
+  .info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+  footer {
+    text-align: center;
+  }
 }
